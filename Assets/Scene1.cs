@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scene0 : MonoBehaviour, SceneScript
+public class Scene1 : MonoBehaviour, SceneScript
 {
 
     SceneManager m_oSceneManager;
@@ -10,10 +10,10 @@ public class Scene0 : MonoBehaviour, SceneScript
     // Start is called before the first frame update
     void Start()
     {
-        
+
         m_oSceneManager = GameObject.Find("GameManager").GetComponent<SceneManager>();
 
-        m_oSceneManager.UpdateButton0Text("GOOBLE-GOBBLE!");
+        m_oSceneManager.UpdateButton0Text("SCENE1 WORKED!");
         m_oSceneManager.UpdateButton1Text("BLAH BLAH");
         m_oSceneManager.UpdateButton2Text("LALDLE");
         m_oSceneManager.UpdateButton3Text("PBBBBPLT");
@@ -23,7 +23,7 @@ public class Scene0 : MonoBehaviour, SceneScript
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void Button0Pressed()
