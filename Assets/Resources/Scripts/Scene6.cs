@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scene1 : MonoBehaviour, SceneScript
+public class Scene6 : MonoBehaviour, SceneScript
 {
 
     SceneManager m_oSceneManager;
@@ -13,10 +13,10 @@ public class Scene1 : MonoBehaviour, SceneScript
 
         m_oSceneManager = GameObject.Find("GameManager").GetComponent<SceneManager>();
 
-        m_oSceneManager.UpdateButton0Text("SCENE1 WORKED!");
-        m_oSceneManager.UpdateButton1Text("BLAH BLAH");
-        m_oSceneManager.UpdateButton2Text("LALDLE");
-        m_oSceneManager.UpdateButton3Text("PBBBBPLT");
+        m_oSceneManager.UpdateButton0Text("Keep going");
+        m_oSceneManager.UpdateButton1Text("Turn around");
+        m_oSceneManager.UpdateButton2Text("Start leaving a candy trail");
+        m_oSceneManager.UpdateButton3Text("Stay put");
 
     }
 
@@ -29,7 +29,7 @@ public class Scene1 : MonoBehaviour, SceneScript
     public void Button0Pressed()
     {
         Debug.Log("TEST0");
-        m_oSceneManager.LoadNewScene("Scene1");
+        m_oSceneManager.LoadNewScene("Scene7");
     }
 
     public void Button1Pressed()

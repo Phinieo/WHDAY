@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &863137049182519565
+--- !u!1001 &8504281678583398502
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,10 +11,14 @@ PrefabInstance:
     - target: {fileID: 126576840987882393, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7e660943e6323034c8fad52f355a7acb, type: 3}
+      objectReference: {fileID: 21300000, guid: bb884f5a2f76b2b41ad5828720d817c9, type: 3}
     - target: {fileID: 2787701214076394325, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
       propertyPath: m_Name
-      value: Scene1
+      value: Scene3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120398929943226445, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
+      propertyPath: m_text
+      value: "You\u2019re in the graveyard. What do you want to do?"
       objectReference: {fileID: 0}
     - target: {fileID: 7356517370969373047, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62,22 +66,22 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2787701214076394325, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1093536297005531690}
+      addedObject: {fileID: 4691622238379592755}
   m_SourcePrefab: {fileID: 100100000, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
---- !u!1 &3266690729953598040 stripped
+--- !u!1 &5812634581595151155 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2787701214076394325, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
-  m_PrefabInstance: {fileID: 863137049182519565}
+  m_PrefabInstance: {fileID: 8504281678583398502}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1093536297005531690
+--- !u!114 &4691622238379592755
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3266690729953598040}
+  m_GameObject: {fileID: 5812634581595151155}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bed88cf30281bf4488285946bcbf4d3a, type: 3}
+  m_Script: {fileID: 11500000, guid: f97702915827d9346bc0054522006ae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

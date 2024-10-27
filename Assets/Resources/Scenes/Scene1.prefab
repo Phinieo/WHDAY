@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4253664907066097959
+--- !u!1001 &863137049182519565
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,22 +11,15 @@ PrefabInstance:
     - target: {fileID: 126576840987882393, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 594ba5d5ef2660c4b87b70599c3135bb, type: 3}
-    - target: {fileID: 126576840987882393, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 126576840987882393, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 126576840987882393, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 7e660943e6323034c8fad52f355a7acb, type: 3}
     - target: {fileID: 2787701214076394325, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
       propertyPath: m_Name
-      value: Scene0
+      value: Scene1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7120398929943226445, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
+      propertyPath: m_text
+      value: You arrive at the haunted house, the outside is quite scary. What do
+        you want to do?
       objectReference: {fileID: 0}
     - target: {fileID: 7356517370969373047, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
       propertyPath: m_LocalPosition.x
@@ -74,22 +67,22 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2787701214076394325, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 935410896998500662}
+      addedObject: {fileID: 1093536297005531690}
   m_SourcePrefab: {fileID: 100100000, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
---- !u!1 &2136934700706077298 stripped
+--- !u!1 &3266690729953598040 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2787701214076394325, guid: 74bcf5aacbfbce646bb6fd7b50f0e308, type: 3}
-  m_PrefabInstance: {fileID: 4253664907066097959}
+  m_PrefabInstance: {fileID: 863137049182519565}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &935410896998500662
+--- !u!114 &1093536297005531690
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2136934700706077298}
+  m_GameObject: {fileID: 3266690729953598040}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0b543001c87b3145ac6bf95f40b20e9, type: 3}
+  m_Script: {fileID: 11500000, guid: bed88cf30281bf4488285946bcbf4d3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

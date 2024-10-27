@@ -6,7 +6,7 @@ using UnityEngine;
 public class SceneManager : MonoBehaviour
 {
 
-    DecorationPoints m_oScore;
+    public DecorationPoints m_oScore;
     SceneScript m_oScript;
     GameObject m_goScene;
     public GameObject m_goMainCanvas;
@@ -31,30 +31,7 @@ public class SceneManager : MonoBehaviour
 
         }
 
-
-        GameObject prefab = Resources.Load<GameObject>("Scene0"); 
-
-        if (prefab != null)
-        {
-            // Instantiate the prefab in the scene
-            m_goScene = Instantiate(prefab, Vector3.zero, Quaternion.identity);
-            m_goScene.transform.SetParent(m_goMainCanvas.transform, false);
-        }
-        else
-        {
-
-            Debug.Log("Error finding scene prefab in resoures folder");
-
-        }
-
-        m_oScript = m_goScene.GetComponent<SceneScript>();
-
-        if (m_oScript == null)
-        {
-
-            Debug.Log("Error finding scene script on scene prefab");
-
-        }
+        LoadNewScene("Scene0");
 
         m_oButton0Text = GameObject.Find("Button0Text").GetComponent<TextMeshProUGUI>();
         m_oButton1Text = GameObject.Find("Button1Text").GetComponent<TextMeshProUGUI>();
@@ -186,7 +163,7 @@ public class SceneManager : MonoBehaviour
 
         }
 
-        GameObject prefab = Resources.Load<GameObject>(SceneName);
+        GameObject prefab = Resources.Load<GameObject>("Scenes/" + SceneName);
 
         if (prefab != null)
         {
