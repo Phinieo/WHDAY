@@ -29,7 +29,7 @@ public class Scene0 : MonoBehaviour, SceneScript
     public void Button0Pressed()
     {
         m_oSceneManager.m_oScore.nSkeleton++;
-        m_oSceneManager.LoadNewScene("Scene1");
+        m_oSceneManager.LoadNewScene("HauntedHouse0");
 
     }
 
@@ -37,7 +37,7 @@ public class Scene0 : MonoBehaviour, SceneScript
     {
 
         m_oSceneManager.m_oScore.nGhost++;
-        m_oSceneManager.LoadNewScene("Scene2");
+        m_oSceneManager.LoadNewScene("CandyBowl0");
 
     }
 
@@ -45,7 +45,7 @@ public class Scene0 : MonoBehaviour, SceneScript
     {
 
         m_oSceneManager.m_oScore.nScarecrow++;
-        m_oSceneManager.LoadNewScene("Scene3");
+        m_oSceneManager.LoadNewScene("Graveyard0");
 
     }
 
@@ -53,7 +53,7 @@ public class Scene0 : MonoBehaviour, SceneScript
     {
 
         m_oSceneManager.m_oScore.nJackOLantern++;
-        m_oSceneManager.LoadNewScene("Scene4");
+        m_oSceneManager.LoadNewScene("CostumeShop0");
 
     }
 

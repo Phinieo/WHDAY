@@ -28,8 +28,7 @@ public class Scene9 : MonoBehaviour, SceneScript
 
     public void Button0Pressed()
     {
-        Debug.Log("TEST0");
-        m_oSceneManager.LoadNewScene("Scene0");
+        m_oSceneManager.GameOver();
     }
 
     public void Button1Pressed()

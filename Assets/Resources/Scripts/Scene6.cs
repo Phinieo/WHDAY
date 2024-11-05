@@ -28,23 +28,26 @@ public class Scene6 : MonoBehaviour, SceneScript
 
     public void Button0Pressed()
     {
-        Debug.Log("TEST0");
-        m_oSceneManager.LoadNewScene("Scene7");
+        m_oSceneManager.m_oScore.nScarecrow++;
+        m_oSceneManager.LoadNewScene("Castle0");
     }
 
     public void Button1Pressed()
     {
-        Debug.Log("TEST1");
+        m_oSceneManager.m_oScore.nGhost++;
+        m_oSceneManager.LoadNewScene("LeafPile0");
     }
 
     public void Button2Pressed()
     {
-        Debug.Log("TEST2");
+        m_oSceneManager.m_oScore.nSkeleton++;
+        m_oSceneManager.LoadNewScene("Woods1");
     }
 
     public void Button3Pressed()
     {
-        Debug.Log("TEST3");
+        m_oSceneManager.m_oScore.nJackOLantern++;
+        m_oSceneManager.LoadNewScene("Woods2");
     }
 
 }

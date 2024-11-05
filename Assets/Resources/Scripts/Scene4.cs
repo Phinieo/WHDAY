@@ -28,23 +28,66 @@ public class Scene4 : MonoBehaviour, SceneScript
 
     public void Button0Pressed()
     {
-        Debug.Log("TEST0");
-        m_oSceneManager.LoadNewScene("Scene5");
+        m_oSceneManager.m_oScore.nScarecrow++;
+
+        int randomValue = Random.Range(0, 2); // Generates either 0 or 1
+
+        if (randomValue == 0)
+        {
+            m_oSceneManager.LoadNewScene("Raygun0");
+        }
+        else
+        {
+            m_oSceneManager.LoadNewScene("Apocalypse0");
+        }
     }
 
     public void Button1Pressed()
     {
-        Debug.Log("TEST1");
+        m_oSceneManager.m_oScore.nSkeleton++;
+
+        int randomValue = Random.Range(0, 2); // Generates either 0 or 1
+
+        if (randomValue == 0)
+        {
+            m_oSceneManager.LoadNewScene("Raygun0");
+        }
+        else
+        {
+            m_oSceneManager.LoadNewScene("Apocalypse0");
+        }
     }
 
     public void Button2Pressed()
     {
-        Debug.Log("TEST2");
+        m_oSceneManager.m_oScore.nGhost++;
+
+        int randomValue = Random.Range(0, 2); // Generates either 0 or 1
+
+        if (randomValue == 0)
+        {
+            m_oSceneManager.LoadNewScene("Raygun0");
+        }
+        else
+        {
+            m_oSceneManager.LoadNewScene("Apocalypse0");
+        }
     }
 
     public void Button3Pressed()
     {
-        Debug.Log("TEST3");
+        m_oSceneManager.m_oScore.nJackOLantern++;
+
+        int randomValue = Random.Range(0, 2); // Generates either 0 or 1
+
+        if (randomValue == 0)
+        {
+            m_oSceneManager.LoadNewScene("Raygun0");
+        }
+        else
+        {
+            m_oSceneManager.LoadNewScene("Apocalypse0");
+        }
     }
 
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scene8 : MonoBehaviour, SceneScript
+public class Scene6_2 : MonoBehaviour, SceneScript
 {
 
     SceneManager m_oSceneManager;
@@ -13,10 +13,10 @@ public class Scene8 : MonoBehaviour, SceneScript
 
         m_oSceneManager = GameObject.Find("GameManager").GetComponent<SceneManager>();
 
-        m_oSceneManager.UpdateButton0Text("Jump in!");
-        m_oSceneManager.UpdateButton1Text("Add more leaves to make te pile bigger");
-        m_oSceneManager.UpdateButton2Text("Light it on fire");
-        m_oSceneManager.UpdateButton3Text("Ignore the pile because there might be bugs");
+        m_oSceneManager.UpdateButton0Text("Hide!");
+        m_oSceneManager.UpdateButton1Text("Run away!");
+        m_oSceneManager.UpdateButton2Text("Get ready for confrontation");
+        m_oSceneManager.UpdateButton3Text("Eat the rest of the candy before anyone can steal it");
 
     }
 
@@ -28,7 +28,7 @@ public class Scene8 : MonoBehaviour, SceneScript
 
     public void Button0Pressed()
     {
-        m_oSceneManager.m_oScore.nSkeleton++;
+        m_oSceneManager.m_oScore.nGhost++;
         m_oSceneManager.ToggleContinueButton();
         m_oSceneManager.UpdateContinueButtonText("Yay!");
         m_oSceneManager.LoadNewScene("Congrats1");
@@ -36,7 +36,7 @@ public class Scene8 : MonoBehaviour, SceneScript
 
     public void Button1Pressed()
     {
-        m_oSceneManager.m_oScore.nScarecrow++;
+        m_oSceneManager.m_oScore.nSkeleton++;
         m_oSceneManager.ToggleContinueButton();
         m_oSceneManager.UpdateContinueButtonText("Yay!");
         m_oSceneManager.LoadNewScene("Congrats1");
@@ -44,18 +44,18 @@ public class Scene8 : MonoBehaviour, SceneScript
 
     public void Button2Pressed()
     {
-        m_oSceneManager.m_oScore.nJackOLantern++;
+        m_oSceneManager.m_oScore.nScarecrow++;
         m_oSceneManager.ToggleContinueButton();
         m_oSceneManager.UpdateContinueButtonText("Yay!");
-        m_oSceneManager.LoadNewScene("Congrats1");
+        m_oSceneManager.LoadNewScene("Congrats2");
     }
 
     public void Button3Pressed()
     {
-        m_oSceneManager.m_oScore.nGhost++;
+        m_oSceneManager.m_oScore.nJackOLantern++;
         m_oSceneManager.ToggleContinueButton();
         m_oSceneManager.UpdateContinueButtonText("Yay!");
-        m_oSceneManager.LoadNewScene("Congrats1");
+        m_oSceneManager.LoadNewScene("Congrats2");
     }
 
 }

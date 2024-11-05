@@ -34,7 +34,7 @@ public class SceneManager : MonoBehaviour
 
         }
 
-        LoadNewScene("Scene0");
+        LoadNewScene("Opening");
 
         m_oButton0Text = GameObject.Find("Button0Text").GetComponent<TextMeshProUGUI>();
         m_oButton1Text = GameObject.Find("Button1Text").GetComponent<TextMeshProUGUI>();
@@ -202,7 +202,7 @@ public class SceneManager : MonoBehaviour
             {
 
                 LoadNewScene("EndJack");
-                ToggleContinueButton();
+
                 UpdateContinueButtonText("Yay!");
 
 
@@ -210,7 +210,7 @@ public class SceneManager : MonoBehaviour
             {
 
                 LoadNewScene("EndSkeleton");
-                ToggleContinueButton();
+
                 UpdateContinueButtonText("Yay!");
 
             }
@@ -218,7 +218,7 @@ public class SceneManager : MonoBehaviour
             {
 
                 LoadNewScene("EndGhost");
-                ToggleContinueButton();
+
                 UpdateContinueButtonText("Yay!");
 
             }
@@ -226,7 +226,6 @@ public class SceneManager : MonoBehaviour
             {
 
                 LoadNewScene("EndScarecrow");
-                ToggleContinueButton();
                 UpdateContinueButtonText("Yay!");
 
             }
@@ -241,7 +240,7 @@ public class SceneManager : MonoBehaviour
             {
 
                 LoadNewScene("EndJack");
-                ToggleContinueButton();
+
                 UpdateContinueButtonText("Yay!");
 
             }
@@ -249,7 +248,7 @@ public class SceneManager : MonoBehaviour
             {
 
                 LoadNewScene("EndSkeleton");
-                ToggleContinueButton();
+
                 UpdateContinueButtonText("Yay!");
 
             }
@@ -257,7 +256,7 @@ public class SceneManager : MonoBehaviour
             {
 
                 LoadNewScene("EndGhost");
-                ToggleContinueButton();
+
                 UpdateContinueButtonText("Yay!");
 
             }
@@ -265,7 +264,7 @@ public class SceneManager : MonoBehaviour
             {
 
                 LoadNewScene("EndScarecrow");
-                ToggleContinueButton();
+
                 UpdateContinueButtonText("Yay!");
 
             }
